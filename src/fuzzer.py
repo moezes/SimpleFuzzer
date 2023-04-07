@@ -46,4 +46,11 @@ class Fuzzer:
         return runner.run(self.fuzz())
 
     def runs(self, runner: Runner, trials: int = 10):
+        """
+        Runs <trials> times
+        :param runner: the runner to use
+        :type runner: Runner
+        :param trials: number of runs to do
+        :returns: The list of completed processes and interruption types
+        """
         return [self.run(runner) for _ in range(trials)]
