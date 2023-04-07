@@ -1,6 +1,6 @@
 # tool macros
 CC ?= gcc
-CFLAGS := -fno-stack-protector
+CFLAGS := -fno-stack-protector -no-pie
 DBGFLAGS := -g
 COBJFLAGS := $(CFLAGS) -c
 
