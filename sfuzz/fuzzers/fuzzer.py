@@ -15,7 +15,7 @@ class Fuzzer:
     def set_runner(self, runner: Runner):
         self.runner = runner
 
-    def run(self, runner: Runner = None) -> Tuple[subprocess.CompletedProcess, Union[str | None]]:
+    def run(self, runner: Runner = None) -> Tuple[subprocess.CompletedProcess, Union[str, None]]:
         """
         Launch a runner with a generated payload
         :param runner: the runner to start

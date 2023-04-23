@@ -28,7 +28,7 @@ class Runner:
             stderr=subprocess.PIPE
         )
 
-    def run(self, program_input: str = "") -> Tuple[subprocess.CompletedProcess, Union[str | None]]:
+    def run(self, program_input: str = "") -> Tuple[subprocess.CompletedProcess, Union[str, None]]:
         """
         Starts new process and returns interruption type or None
         :param program_input: The arguments for standard input
