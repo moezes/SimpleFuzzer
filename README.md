@@ -4,9 +4,8 @@
 ## Description
 
 Tool for fuzzing developed in Python.
-The goal of this project is to have a simple fuzzer written in python that can easily be integrated and updated.
+The goal of this project is to understand the inner workings of a fuzzer and implement our own. As such, we have made a simple fuzzer written in python that can easily be integrated and updated.
 
-## Table of Contents
 
 - [Pre-requisites](#Pre-requisites)
 - [Installation](#installation)
@@ -62,3 +61,6 @@ $   python -m sfuzz
 The program will automatically test the binaries in the `tests/binaries/bin/` folder and return the details and the argument used to smash the stack
 
 ---
+## Tests
+
+To test other binaries, modify the `get_fuzzer` function in the `__main__.py` file to point to the desired file.
